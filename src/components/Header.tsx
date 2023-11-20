@@ -1,76 +1,41 @@
 'use client'
-// import type { CustomFlowbiteTheme } from 'flowbite-react';
-import Image from "next/image";
-import { Flowbite, Navbar } from "flowbite-react";
 import Link from "next/link";
-
-// const customTheme: CustomFlowbiteTheme = {
-//   navbar: {
-//     root: {
-//       base: '',
-//       inner: {
-//         base: "p-4 mx-auto flex flex-wrap items-center relative justify-between",
-//         fluid: {
-//           on: "",
-//           off: "container"
-//       }
-//     }
-//     },
-//     collapse: {
-//       base: "w-full md:block md:w-auto absolute top-14 left-0 z-10",
-//       list: "mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium bg-white",
-//       hidden: {
-//         on: "hidden",
-//         off: ""
-//       }
-//     },
-//     toggle: {
-//       base: "inline-flex items-center rounded-lg p-2 text-sm text-gray-500 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700 md:hidden",
-//       icon: "h-6 w-6 shrink-0"
-//     },
-//     link: {
-//       base: "block py-2 px-4 md:p-0",
-//       active: {
-//         on: "bg-cyan-700 text-white dark:text-white md:bg-transparent md:text-cyan-700",
-//         off: "border-b border-gray-100  text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-cyan-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
-//       },
-//     },
-//     },
-//   };
+import { Navbar } from "flowbite-react";
+import { NavbarBrand } from "flowbite-react/lib/esm/components/Navbar/NavbarBrand";
 
  export default function Header(){
 
   return(
-    <header></header>
+
+    <header className="bg-zen">
+        <Navbar fluid className="bg-zen py-4 px-8 md:py-8 md:px-16 lg:py-14 lg:px-24 relative">
+          <NavbarBrand as={Link} href="/">
+              <svg className="logo" xmlns="http://www.w3.org/2000/svg" width={128} height={89} viewBox={`0 0 128 89`} aria-label="Zen Zone logo">
+                  <g clipPath="url(#clip0_423_96)">
+                  <path d="M31.9567 43.8602C31.9567 44.3745 31.2896 44.9526 30.3255 44.9526H1.63119C0.371373 44.9526 -0.148988 44.1818 0.222386 43.4109L15.9417 9.37549H1.5567C0.667157 9.37549 0 8.79737 0 8.21925V1.15624C0 0.578122 0.667157 0 1.5567 0H30.251C31.512 0 32.1057 0.77083 31.7343 1.54166C26.5439 12.8442 21.131 24.2745 15.9417 35.576H30.3255C31.2896 35.576 31.9567 36.1541 31.9567 36.7322V43.8602Z"/>
+                  <path d="M51.4827 9.18278V17.7874H70.4643C71.3539 17.7874 71.9476 18.3656 71.9476 18.9437V25.879C71.9476 26.3921 71.3539 26.9702 70.4643 26.9702H51.4827V35.576H74.5429C75.5069 35.576 76.174 36.1541 76.174 36.7322V43.8602C76.174 44.3745 75.5069 44.9526 74.5429 44.9526H41.6955C40.7315 44.9526 40.1377 44.3745 40.1377 43.8602V1.15624C40.1377 0.578122 40.7315 0 41.6955 0H73.9502C74.8397 0 75.5069 0.578122 75.5069 1.15624V8.02764C75.5069 8.60576 74.8397 9.18389 73.9502 9.18389H51.4837L51.4827 9.18278Z"/>
+                  <path d="M128 43.8602C128 44.3745 127.407 44.9526 126.442 44.9526H118.138C117.841 44.9526 117.174 44.8237 116.878 44.5033C109.315 35.1278 102.864 27.1013 95.2271 17.6608V43.8613C95.2271 44.3756 94.5588 44.9537 93.6693 44.9537H85.3654C84.4748 44.9537 83.8076 44.3756 83.8076 43.8613V1.15624C83.8076 0.578122 84.4748 0 85.3654 0H93.7438C94.0406 0 94.7078 0.128839 95.0036 0.449284C102.418 9.69594 109.24 17.9163 116.728 27.2279V1.15624C116.728 0.578122 117.321 0 118.285 0H126.441C127.406 0 127.999 0.578122 127.999 1.15624V43.8602H128Z"/>
+                  <path d="M22.9837 88.0916C22.9837 88.5188 22.505 89 21.8137 89H1.2403C0.336518 89 -0.0359507 88.3591 0.230255 87.7172L11.5018 59.3936H1.18662C0.549044 59.3936 0.0703125 58.9124 0.0703125 58.4322V52.5541C0.0703125 52.0729 0.549044 51.5928 1.18662 51.5928H21.7611C22.6649 51.5928 23.0911 52.2337 22.8249 52.8757C19.1035 62.2809 15.2221 71.7929 11.5007 81.1992H21.8137C22.505 81.1992 22.9837 81.6805 22.9837 82.1606V88.0927V88.0916Z"/>
+                  <path d="M28.0864 65.22C28.0864 57.5249 34.5192 51.1655 42.387 51.1655C50.2549 51.1655 56.6351 57.5249 56.6351 65.22C56.6351 72.915 50.2023 79.1676 42.387 79.1676C34.5718 79.1676 28.0864 72.969 28.0864 65.22ZM55.04 88.0916C55.04 88.5188 54.5613 89 53.87 89H30.5842C29.8929 89 29.4678 88.5188 29.4678 88.0916V82.2135C29.4678 81.7322 29.8929 81.251 30.5842 81.251H53.87C54.5613 81.251 55.04 81.7322 55.04 82.2135V88.0916ZM36.2205 65.22C36.2205 68.7999 38.9844 71.4185 42.387 71.4185C45.7896 71.4185 48.501 68.7999 48.501 65.22C48.501 61.64 45.7896 58.9135 42.387 58.9135C38.9844 58.9135 36.2205 61.6929 36.2205 65.22Z"/>
+                  <path d="M94.9105 88.0916C94.9105 88.5188 94.4854 89 93.7931 89H87.8391C87.6265 89 87.1478 88.8932 86.9353 88.6256C81.5126 80.8237 76.8874 74.1439 71.411 66.2881V88.0916C71.411 88.5188 70.9323 89 70.2936 89H64.3396C63.7009 89 63.2222 88.5188 63.2222 88.0916V52.5541C63.2222 52.0729 63.7009 51.5928 64.3396 51.5928H70.3473C70.5598 51.5928 71.0385 51.6996 71.2511 51.9672C76.5675 59.6623 81.4589 66.5028 86.8279 74.2519V52.5552C86.8279 52.074 87.253 51.5939 87.9442 51.5939H93.792C94.4833 51.5939 94.9094 52.0751 94.9094 52.5552V88.0927L94.9105 88.0916Z"/>
+                  <path d="M110.032 59.235V66.396H123.642C124.28 66.396 124.706 66.8772 124.706 67.3573V73.1287C124.706 73.5559 124.28 74.0371 123.642 74.0371H110.032V81.1981H126.566C127.257 81.1981 127.736 81.6794 127.736 82.1595V88.0916C127.736 88.5188 127.257 89 126.566 89H103.014C102.323 89 101.896 88.5188 101.896 88.0916V52.5541C101.896 52.0729 102.323 51.5928 103.014 51.5928H126.14C126.777 51.5928 127.256 52.074 127.256 52.5541V58.2726C127.256 58.7538 126.777 59.2339 126.14 59.2339H110.031L110.032 59.235Z"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_423_96">
+                      <rect width="128" height="89" fill="white"/>
+                    </clipPath>
+                  </defs>
+              </svg>
+          </NavbarBrand>
+          <Navbar.Toggle className="hover:bg-transparent focus:ring-0"/>
+          <Navbar.Collapse className="absolute menu md:static">
+            <Navbar.Link as={Link} href="/"> Home</Navbar.Link>
+            <Navbar.Link as={Link} href="/for-me"> For me</Navbar.Link>
+            <Navbar.Link as={Link} href="/for-a-friend"> For a friend</Navbar.Link>
+            <Navbar.Link as={Link} href="/resources"> Resources</Navbar.Link>
+            <Navbar.Link as={Link} href="/get-help"> Get Help Now</Navbar.Link>
+          </Navbar.Collapse>
+        </Navbar>
+    </header>
   )
-    // return(
-    //   <header>
-    //     <Flowbite theme={{theme: customTheme}}>
-    //       <Navbar fluid rounded>
-    //         <Navbar.Brand as={Link} href="/">
-    //         <Image
-    //           src="/graphics/logo.svg"
-    //           alt="Zen Zone Logo"
-    //           width={118}
-    //           height={44}
-    //           className="sm:h-9"
-    //           priority
-    //           />
-    //         </Navbar.Brand>
-    //         <Navbar.Toggle />
-    //         <Navbar.Collapse>
-    //           <Navbar.Link href="/">
-    //             Home
-    //           </Navbar.Link>
-    //           <Navbar.Link href="/for-me">
-    //             For me
-    //           </Navbar.Link>
-    //           <Navbar.Link href="/for-a-friend">For a friend</Navbar.Link>
-    //           <Navbar.Link href="/get-help">Get help</Navbar.Link>
-    //           <Navbar.Link href="/resources">Resources</Navbar.Link>
-    //         </Navbar.Collapse>
-    //       </Navbar>
-    //     </Flowbite>
-    //   </header>
-    // )
 }

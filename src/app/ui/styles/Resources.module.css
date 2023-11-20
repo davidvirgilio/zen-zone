@@ -1,0 +1,9 @@
+.card{
+    color: white;
+    max-width: 25rem;
+    border-radius: 1.25rem;
+    background: linear-gradient(60deg, var(--purple-zen) 20.82%, rgba(157, 218, 185, 0.95) 95.22%);
+
+
+
+}

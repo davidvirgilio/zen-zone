@@ -3,17 +3,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body{
   display: flex;
-  font-family: "poppins", Helvetica, Arial, sans-serif;
   min-height: 100vh;
   flex-direction: column;
+  color: var(--purple-zen);
 }
 
 h1, h2, h3, h4{
   font-family: "neue-haas-grotesk-text", sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+h1{
+  font-size: 3rem;
 }
 .button-face{
   max-width: 6rem;
@@ -39,8 +43,6 @@ main{
   --orange-anticipation: #F97F12;
 }
 
-.red
-
 .bg-zen{
   background-color: var(--purple-zen);
 }
@@ -52,4 +54,29 @@ main{
 }
 .bg-blue{
   background-color: var(--blue-sad);
+}
+.bg-light-green{
+  background-color: #D9FFCE99;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  background-color: #9753B8;
+  color: white;
+  width: fit-content;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+}
+
+.graphic-button{
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0.2rem;
+}
+
+.footer-curve{
+  background: url('../../public/graphics/curve-green.svg');
+  background-size: contain;
 }

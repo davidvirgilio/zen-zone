@@ -1,9 +1,12 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import React from 'react'
 
 type VideoProps = {
   name: string,
 }
+
+
 
 function Video({name}: VideoProps){
     return (
@@ -16,34 +19,22 @@ function Video({name}: VideoProps){
 function TextSection({ title , text }:{title:string, text: string}){
     return(
       <section className='p-10'>
-        <h1 className='text-xl mb-8'>{ title }</h1>
+        <h1 className='mb-8'>{ title }</h1>
         <p>{ text }</p>
       </section>
     )}
 
-function HomeButton({text, page}:{text:string, page: string}){
+function HomeButton({text, page, image}:{text:string, page: string, image: string}){
     return(
-      <button className='rounded-full bg-white w-24 h-24 '
-      type='button'><Link href={page}>{text}</Link></button>
+      <Link className='rounded-full flex flex-col justify-center gap-1 bg-zen text-white w-36 h-36 text-center p-2' href={page}>
+        <Image className='graphic-button' alt='icon' src={image} width={116} height={140} />
+        {text}
+      </Link>
     )
 }
 
 
 
-  function Face(){
-    return(
-      <button  className='button-face mx-auto w-full'>
-        <Image
-          src="/graphics/circle.svg"
-          alt="Face"
-          width={60}
-          height={60}
-          priority
-          className='w-full'
-           />
-      </button>
-    )
-  }
 
 
-export {Video, TextSection, HomeButton, Face} 
+export {Video, TextSection, HomeButton} 

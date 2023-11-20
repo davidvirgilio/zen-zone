@@ -4,12 +4,12 @@ import VideoCarousel from '@/components/Carousel'
 
 function HomeButtons(){
   return(
-    <section className='p-8 bg-slate-200'>
-      <h2>What statement better describes you?</h2>
-      <div className='flex py-10 gap-4'>
-        <HomeButton text= {'For me'} page={'for-me'}/>
-        <HomeButton text= {'For a friend'} page={'for-a-friend'} />
-        <HomeButton text= {'Get Help Now'} page={'get-help'} />
+    <section className='p-8 bg-light-green'>
+      <h2 className='text-center'>What statement better describes you?</h2>
+      <div className='flex py-10 gap-4 md:gap-12 justify-center'>
+        <HomeButton text= {'For me'} page={'for-me'} image={'/graphics/icon-mind.svg'}/>
+      <HomeButton text= {'For a friend'} page={'for-a-friend'}  image={'/graphics/icon-hands.svg'}/>
+        <HomeButton text= {'Get Help Now'} page={'get-help'} image={'/graphics/icon-heart.svg'}/>
       </div>
     </section>
   )
@@ -22,7 +22,7 @@ export default function Home() {
         <Video name= {'intro'} />
         <TextSection
           title = {"Mental Health Matters at SAIT"}
-          text = {"Lorem ipsum dolor sit amet consectetur. Sed auctor augue nam faucibus proin. Massa vitae tristique sit at lobortis erat. Ac et euismod neque suspendisse vel elit iaculis id. Imperdiet orci mattis nibh convallis vulputate dictumst facilisis."}
+          text = {"As SAIT’s students, we recognize the importance of mental health and are committed to fostering a supportive community. This website serves as a comprehensive resource hub, offering vital information, helpful resources, and a compassionate community for everyone navigating the complexities of mental health."}
         />
         <HomeButtons />
         <section className='py-8'>

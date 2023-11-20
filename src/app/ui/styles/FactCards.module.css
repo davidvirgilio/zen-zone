@@ -1,0 +1,39 @@
+.card {
+    width: 10rem;
+    height: 10rem;
+    perspective: 1000px;
+    transition: transform 0.5s;
+    cursor: pointer;
+  }
+  
+  .cardInner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  .flipped .cardInner {
+    transform: rotateY(180deg);
+  }
+  
+  .cardFront,
+  .cardBack {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .cardFront {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cardBack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+  }

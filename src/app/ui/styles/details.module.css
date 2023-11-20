@@ -1,0 +1,27 @@
+
+.dropDetails>summary{
+    list-style: none;
+  }
+  
+.arrow svg{
+    width: 1rem;
+}
+
+.dropDetails[open] summary{
+    padding-bottom: 1rem;
+}
+details[open] .arrow{
+    transform: rotate(-180deg);
+    transition: all 0.2s ease-out;
+}
+
+.dropDetails p{
+    border-top: solid 0.1rem var(--purple-zen);
+    padding: 1rem 0;
+}
+
+.illustration{
+    max-width: 60%;
+    position: relative;
+    bottom: -0.5rem;
+}
