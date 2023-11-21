@@ -1,7 +1,7 @@
 'use client'
 import React from "react";
 import { Card } from "flowbite-react";
-import style from "@/app/ui/styles/Resources.module.css"
+import style from "./Resources.module.css"
 
 
 const resources = [

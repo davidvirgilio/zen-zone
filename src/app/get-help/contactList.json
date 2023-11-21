@@ -1,0 +1,34 @@
+[
+    {
+        "level": "Emergency Contacts",
+        "color": {"backgroundColor": "#EF8680"},
+        "contacts": [
+            { "name": "Contact Name", "phoneNumber": "+1 (503) 284-7969", "email": "hello@zenzonewell.ca"},
+            { "name": "Contact Name", "phoneNumber": "+1 (503) 284-7969", "email": "hello@zenzonewell.ca"}
+        ]
+    },
+    {
+        "level": "High Level of Urgency",
+        "color": {"backgroundColor": "#FCBE83"},
+        "contacts": [
+            { "name": "Contact Name", "phoneNumber": "+1 (503) 284-7969", "email": "hello@zenzonewell.ca"},
+            { "name": "Contact Name", "phoneNumber": "+1 (503) 284-7969", "email": "hello@zenzonewell.ca"}
+        ]
+    },
+    {
+        "level": "Medium Level of Urgency",
+        "color": {"backgroundColor": "#FEF6A0"},
+        "contacts": [
+            { "name": "Contact Name", "phoneNumber": "+1 (503) 284-7969", "email": "hello@zenzonewell.ca"},
+            { "name": "Contact Name", "phoneNumber": "+1 (503) 284-7969", "email": "hello@zenzonewell.ca"}
+        ]
+    },
+    {
+        "level": "Low Level of Urgency",
+        "color": {"backgroundColor": "#CEFFAE"},
+        "contacts": [
+            { "name": "Contact Name", "phoneNumber": "+1 (503) 284-7969", "email": "hello@zenzonewell.ca"},
+            { "name": "Contact Name", "phoneNumber": "+1 (503) 284-7969", "email": "hello@zenzonewell.ca"}
+        ]
+    }
+]

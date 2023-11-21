@@ -25,6 +25,7 @@ h1{
 
 h2{
   margin-bottom: 1rem;
+  
 }
 
 main{
@@ -57,6 +58,9 @@ main{
 }
 .bg-light-green{
   background-color: #D9FFCE99;
+}
+.bg-yellow{
+  background-color: #FEF6A0;
 }
 
 .btn{

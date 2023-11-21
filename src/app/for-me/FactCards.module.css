@@ -1,9 +1,11 @@
 .card {
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 16rem;
     perspective: 1000px;
     transition: transform 0.5s;
     cursor: pointer;
+    font-weight: 400;
+    line-height: 116%;
   }
   
   .cardInner {
@@ -15,6 +17,10 @@
   
   .flipped .cardInner {
     transform: rotateY(180deg);
+  }
+  .flipped{
+    background-color: var(--purple-zen);
+    color: white;
   }
   
   .cardFront,
@@ -29,11 +35,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
   
   .cardBack {
     display: flex;
     align-items: center;
+    gap: 1rem;
     justify-content: center;
     transform: rotateY(180deg);
+    flex-direction: column;
+    font-weight: 400;
+  }
+  .cardBack ul{
+    list-style: disc;
+    padding-left: 2rem;
+  }
+
+  .cardFront img{
+    width: 3rem;
+    height: auto;
   }

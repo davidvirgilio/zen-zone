@@ -1,0 +1,33 @@
+.levelBar{
+    background: linear-gradient(180deg, #F90202 0%, #E9F472 42.19%, #E3F370 57.81%, #1BC82C 100%);
+    content: '';
+    width: 2rem;
+}
+
+.dropDetails>summary{
+    list-style: none;
+  }
+  
+.arrow svg{
+    width: 1rem;
+}
+.dropDetails[open] summary{
+    padding-bottom: 1rem;
+}
+details[open] .arrow{
+    transform: rotate(-180deg);
+    transition: all 0.2s ease-out;
+}
+.icon{
+    width: 1rem;
+}
+.dropDetails{
+    padding: 0.5rem 1rem;
+    color: #212121;
+    font-weight: 600;
+    border-radius: 1rem;
+}
+.illustration{
+    width: 70%;
+    margin: 0 auto;
+}

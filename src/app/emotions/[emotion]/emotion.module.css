@@ -1,0 +1,12 @@
+.chevron{
+    height: 2rem;
+    width: auto;
+}
+.bgTop{
+    position: relative;
+    bottom: -1px;
+}
+.bgButton{
+    position: relative;
+    top: -1px;
+}

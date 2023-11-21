@@ -17,6 +17,7 @@ header svg, footer svg{
 }
 .menu a{
     color: white;
+    padding: 1rem 2rem;
 }
 
 Link{

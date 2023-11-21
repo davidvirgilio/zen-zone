@@ -1,8 +1,7 @@
 'use client'
-import Link from "next/link"
 import Image from "next/image"
-import { EmotionsWheel } from "@/components/EmotionsWheel"
-import { FactCards } from "@/components/FactCards"
+import { EmotionsWheel } from "./EmotionsWheel"
+import { FactCards } from "@/app/for-me/FactCards"
 import { ResourcesButton } from "@/components/ResourcesButton"
 
 
