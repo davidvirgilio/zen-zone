@@ -32,12 +32,12 @@ function Emotions({sendToParent}:{sendToParent: (emotion:string)=> void}){
   }
   
   return(
-    <div className="flex grid grid-cols-3 grid-rows-3 items-center max-w-screen-md h- p-8 m-auto gap-4">
+    <div className="flex grid grid-cols-3 grid-rows-3 items-center max-w-screen-md px-4 py-8 m-auto gap-4">
             <Face emotion={'anticipation'} width={201} height={205} onSelect={handleEmotion}/>
             <Face emotion={'joy'} width={183} height={183} onSelect={handleEmotion}/>
             <Face emotion={'trust'} width={174.39} height={186.44} onSelect={handleEmotion}/>
             <Face emotion={'anger'} width={185} height={201} onSelect={handleEmotion} />
-            <h1 className="text-center uppercase">How are you feeling today?</h1>
+            <h3 className="text-center uppercase">How are you feeling today?</h3>
             <Face emotion={'fear'} width={179} height={179} onSelect={handleEmotion}/>
             <Face emotion={'disgust'} width={189.10} height={195.28} onSelect={handleEmotion}/>
             <Face emotion={'sadness'} width={187} height={191} onSelect={handleEmotion}/>
@@ -51,14 +51,14 @@ function Emotions({sendToParent}:{sendToParent: (emotion:string)=> void}){
 
     if(exist && emotionData){
       return(
-        <section className="p-8 mx-10 sm:mx-auto rounded-3xl w-fit mx-auto" style={emotionData.style}>
+        <section className="p-8 sm:mx-auto rounded-3xl w-fit mx-8" style={emotionData.style}>
             <h2 className="capitalize">{emotion}</h2>
             <div className="flex flex-wrap gap-8 mb-8">
-              <Image alt={emotion + " emoji"} src={"/graphics/emotion-" + emotion + ".svg"} width={258} height={258}/>
+              <Image className="w-24 h-auto mx-auto" alt={emotion + " emoji"} src={"/graphics/emotion-" + emotion + ".svg"} width={258} height={258}/>
               {/* <div className="rounded-full bg-white w-24 h-24 flex justify-center items-center">{emotion}</div> */}
               <p className="max-w-md">{emotionData.summary}</p>
             </div>
-            <Link href={"/emotions/" + emotion} className="block w-full text-right">Explore more</Link>
+            <Link href={"/emotions/" + emotion} className="block w-full text-right hover:underline">Explore more</Link>
             </section>
       )
     }

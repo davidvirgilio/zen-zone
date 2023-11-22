@@ -1,7 +1,7 @@
 
 import React, {useState} from "react"
 import { Card } from "flowbite-react"
-import styles from  './FactCards.module.css'
+import styles from  './ForMe.module.css'
 import Image from "next/image"
 
 
@@ -63,7 +63,7 @@ function FactCard({card}:any){
             <div className={`${styles.cardInner}`}>
                 <div className={`${styles.cardFront} flex flex-col gap-4 lg:gap-14`}>
                     <Image alt={card.name} src={`./graphics/${card.image}`} width={131} height={131}></Image>
-                    <h2>{card.name}</h2>
+                    <p className="font-bold leading-normal">{card.name}</p>
                 </div>
                 <div className={`${styles.cardBack}`}>
                     <p>{card.text}</p>

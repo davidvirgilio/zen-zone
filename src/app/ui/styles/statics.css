@@ -12,12 +12,16 @@ header svg, footer svg{
     z-index: 9999;
     color: white;
 }
-.menu a:hover{
+header .menu a:hover{
     color: var(--purple-zen);
 }
-.menu a{
+header .menu a{
     color: white;
     padding: 1rem 2rem;
+}
+footer .menu a{
+    padding: 0 1rem;
+    display: block;
 }
 
 Link{

@@ -23,14 +23,14 @@ export default function Footer(){
                     </defs>
                     </svg>
                 </Link>
-                <ul className="text-whiten menu flex flex-col gap-1 sm:flex-row sm:gap-8 lg:gap-16 sm:justify-center">
+                <ul className="text-whiten menu py-4 flex flex-col gap-1 sm:flex-row sm:gap-8 lg:gap-16 sm:justify-center">
                     <li><Link href='/'>Home</Link></li>
                     <li><Link href='/for-me'>For me</Link></li>
                     <li><Link href='/for-a-friend'>For a Friend</Link></li>
                     <li><Link href='/resources'>Resources</Link></li>
                     <li><Link href='/get-help'>Get help</Link></li>
                 </ul>
-                <ul className="flex gap-5 justify-center">
+                <ul className="flex gap-5 justify-center pb-4">
                     <li><Link href="#"><Image alt="Instagram" src="/graphics/icon-instagram.svg" width={30} height={30} /></Link></li>
                     <li><Link href="#"><Image alt="Facebook" src="/graphics/icon-facebook.svg" width={30} height={30} /></Link></li>
                     <li><Link href="#"><Image alt="YouTube" src="/graphics/icon-youtube.svg" width={30} height={30} /></Link></li>

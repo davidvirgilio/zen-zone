@@ -56,3 +56,10 @@
     width: 3rem;
     height: auto;
   }
+
+  .curve{
+    background: url('/graphics/curve-green.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }

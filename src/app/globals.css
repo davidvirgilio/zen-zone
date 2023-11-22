@@ -17,16 +17,19 @@ h1, h2, h3, h4{
   font-style: normal;
 }
 h1{
-  font-size: 3rem;
+  font-size: 2rem;
+}
+h2{
+  font-size: 1.4rem;
+  margin-bottom: 1rem; 
+}
+h3{
+  font-size: 1.1rem;
 }
 .button-face{
   max-width: 6rem;
 }
 
-h2{
-  margin-bottom: 1rem;
-  
-}
 
 main{
   flex: 1;
