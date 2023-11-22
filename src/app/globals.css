@@ -30,7 +30,6 @@ h3{
   max-width: 6rem;
 }
 
-
 main{
   flex: 1;
 }
@@ -74,13 +73,6 @@ main{
   width: fit-content;
   border-radius: 1rem;
   padding: 1rem 1rem;
-}
-
-.graphic-button{
-  width: 50%;
-  height: auto;
-  margin: 0 auto;
-  padding: 0.2rem;
 }
 
 .footer-curve{

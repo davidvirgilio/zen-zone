@@ -16,7 +16,6 @@ export default function Page({params}:{params: {emotion :string}}){
             randomEmotions.push(randomIndex);
         }
     }
-    console.log(randomEmotions);
 
     if(data){
         return (

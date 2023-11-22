@@ -23,7 +23,7 @@ export default function Footer(){
                     </defs>
                     </svg>
                 </Link>
-                <ul className="text-whiten menu py-4 flex flex-col gap-1 sm:flex-row sm:gap-8 lg:gap-16 sm:justify-center">
+                <ul className="text-whiten menu py-4 flex flex-col gap-1 md:flex-row md:gap-8 lg:gap-16 sm:justify-center">
                     <li><Link href='/'>Home</Link></li>
                     <li><Link href='/for-me'>For me</Link></li>
                     <li><Link href='/for-a-friend'>For a Friend</Link></li>
