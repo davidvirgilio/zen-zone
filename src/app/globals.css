@@ -9,6 +9,7 @@ body{
   min-height: 100vh;
   flex-direction: column;
   color: var(--purple-zen);
+  background-color: #FFFCF4;
 }
 
 h1, h2, h3, h4{
@@ -20,7 +21,7 @@ h1{
   font-size: 2rem;
 }
 h2{
-  font-size: 1.4rem;
+  font-size: 24px;
   margin-bottom: 1rem; 
 }
 h3{
@@ -49,15 +50,6 @@ main{
 .bg-zen{
   background-color: var(--purple-zen);
 }
-.bg-red{
-  background-color: var(--red-angry);
-}
-.bg-purple{
-  background-color: var(--purple-disgust);
-}
-.bg-blue{
-  background-color: var(--blue-sad);
-}
 .bg-light-green{
   background-color: #D9FFCE99;
 }
@@ -78,4 +70,31 @@ main{
 .footer-curve{
   background: url('../../public/graphics/curve-green.svg');
   background-size: contain;
+}
+.graphic-button img{
+  width: 50%;
+}
+
+figcaption{
+  padding: 1rem 0;
+}
+
+@media (min-width: 1024px) {
+  body{
+    font-size: 30px;
+  }
+  h1{
+    font-size: 50px;
+  }
+  h2{
+    font-size: 40px;
+  }
+  h3{
+    font-size: 32px;
+  }
+  .graphic-button{
+    border-radius: 150px;
+    width: 350px;
+    height: 360px;
+  }
 }

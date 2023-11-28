@@ -9,25 +9,25 @@ type VideoProps = {
   name: string,
 }
 
-function IntroVideo(){
-  const opts = {
-    height: '500',
-    width: '100%',
-    playerVars: {
-      autoplay: 1,
-      color: '#000000',
-      controls: 1,
-      showInfo: 0,
+// function IntroVideo(){
+//   const opts = {
+//     height: '500',
+//     width: '100%',
+//     playerVars: {
+//       autoplay: 1,
+//       color: '#000000',
+//       controls: 1,
+//       showInfo: 0,
 
-    }
-  }
-  return(
-    <YouTube
-      videoId = "BpzVvUGfJeA"
-      opts={opts}
-    />
-  )
-}
+//     }
+//   }
+//   return(
+//     <YouTube
+//       videoId = "BpzVvUGfJeA"
+//       opts={opts}
+//     />
+//   )
+// }
 
 
 function Video({name}: VideoProps){
@@ -40,23 +40,16 @@ function Video({name}: VideoProps){
 
 function TextSection({ title , text }:{title:string, text: string}){
     return(
-      <section className='p-10'>
+      <section className='p-10 lg:flex gap-32 lg:px-24 lg:py-28'>
         <h1 className='mb-8'>{ title }</h1>
-        <p>{ text }</p>
+        <p className='w-full'>{ text }</p>
       </section>
     )}
 
-function HomeButton({text, page, image}:{text:string, page: string, image: string}){
-    return(
-      <Link className='rounded-full flex flex-col justify-center gap-1 bg-zen text-white w-36 h-36 text-center px-4 py-4' href={page}>
-        <Image className='graphic-button hidden sm:block' alt='icon' src={image} width={116} height={140} />
-        <p>{text}</p>
-      </Link>
-    )
-}
 
 
 
 
 
-export {Video, IntroVideo, TextSection, HomeButton} 
+
+export {Video, TextSection} 

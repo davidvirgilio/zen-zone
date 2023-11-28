@@ -7,7 +7,7 @@ header svg, footer svg{
 }
 .menu{
     background-color: var(--purple-zen);
-    top: 5rem;
+    top: 6rem;
     right: 0;
     z-index: 9999;
     color: white;
@@ -39,9 +39,13 @@ Link{
         display: block;
     }
 }
-@media (min-width:1024px) {
+@media (min-width:1100px) {
     .menu a{
         font-size: 25px;
+    }
+    .logo{
+        height: 89px;
+        width: 128px;
     }
 }
 

@@ -2,15 +2,16 @@
 import Link from "next/link";
 import { Navbar } from "flowbite-react";
 import { NavbarBrand } from "flowbite-react/lib/esm/components/Navbar/NavbarBrand";
+import { useState } from "react";
 
  export default function Header(){
 
   return(
 
     <header className="bg-zen">
-        <Navbar fluid className="bg-zen py-4 px-8 sm:p-6 md:py-8 md:px-16 lg:py-14 lg:px-24 relative">
-          <NavbarBrand as={Link} href="/">
-              <svg className=" h-8 sm:h-12 w-auto md:h-16" xmlns="http://www.w3.org/2000/svg" width={128} height={89} viewBox={`0 0 128 89`} aria-label="Zen Zone logo">
+        <Navbar fluid className="bg-zen p-6 md:py-8 md:px-16 lg:py-14 lg:px-24 relative">
+          <NavbarBrand as={Link} href="/" >
+              <svg className="h-12 w-auto logo" xmlns="http://www.w3.org/2000/svg" width={128} height={89} viewBox={`0 0 128 89`} aria-label="Zen Zone logo">
                   <g clipPath="url(#clip0_423_96)">
                   <path d="M31.9567 43.8602C31.9567 44.3745 31.2896 44.9526 30.3255 44.9526H1.63119C0.371373 44.9526 -0.148988 44.1818 0.222386 43.4109L15.9417 9.37549H1.5567C0.667157 9.37549 0 8.79737 0 8.21925V1.15624C0 0.578122 0.667157 0 1.5567 0H30.251C31.512 0 32.1057 0.77083 31.7343 1.54166C26.5439 12.8442 21.131 24.2745 15.9417 35.576H30.3255C31.2896 35.576 31.9567 36.1541 31.9567 36.7322V43.8602Z"/>
                   <path d="M51.4827 9.18278V17.7874H70.4643C71.3539 17.7874 71.9476 18.3656 71.9476 18.9437V25.879C71.9476 26.3921 71.3539 26.9702 70.4643 26.9702H51.4827V35.576H74.5429C75.5069 35.576 76.174 36.1541 76.174 36.7322V43.8602C76.174 44.3745 75.5069 44.9526 74.5429 44.9526H41.6955C40.7315 44.9526 40.1377 44.3745 40.1377 43.8602V1.15624C40.1377 0.578122 40.7315 0 41.6955 0H73.9502C74.8397 0 75.5069 0.578122 75.5069 1.15624V8.02764C75.5069 8.60576 74.8397 9.18389 73.9502 9.18389H51.4837L51.4827 9.18278Z"/>

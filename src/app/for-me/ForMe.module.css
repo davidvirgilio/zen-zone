@@ -6,6 +6,7 @@
     cursor: pointer;
     font-weight: 400;
     line-height: 116%;
+    box-shadow: 4px 5px 18px 0px rgba(47, 1, 71, 0.48);
   }
   
   .cardInner {
@@ -62,4 +63,52 @@
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  .blueBox h3{
+    color: #D9FFCE;
+    margin-bottom: 1rem;
+  }
+  .blueBox img:first-of-type{
+    top: -2.5rem;
+    left: -3rem;
+  }
+  .blueBox img:last-of-type{
+    bottom: -3.5rem;
+    right: -2.5rem;
+  }
+  .blueBox img{
+    position: absolute;
+  }
+  .blueBox{
+    max-width: 770px;
+    padding: 3rem;
+    border-radius: 3rem;
+    margin: 5rem auto;
+    position: relative;
+  }
+
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  @media (min-width: 1024px) {
+    .card {
+      width: 23.625rem;
+      height: 26rem
+    }
+    .cardFront img{
+      width: 8rem;
+    }
+    .curve img{
+      bottom: -0.5rem;
+    }
+    
   }
