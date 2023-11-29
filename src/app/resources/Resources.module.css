@@ -1,9 +1,18 @@
 .card{
     color: white;
-    max-width: 25rem;
+    max-width: 556px;
     border-radius: 1.25rem;
-    background: linear-gradient(60deg, var(--purple-zen) 20.82%, rgba(157, 218, 185, 0.95) 95.22%);
+    padding: 1rem;
+    /* background-color: var(--purple-zen); */
+    background: linear-gradient(79deg, rgba(97, 105, 188, 0.95), rgba(157, 218, 185, 0.95));
+    box-shadow: 3px 4px 25.1px 0px rgba(97, 105, 188, 0.47);
+    
+    /* background: linear-gradient(60deg, var(--purple-zen) 20.82%, rgba(157, 218, 185, 0.95) 95.22%); */
 
+}
 
-
+@media (min-width: 1024px) {
+    .card{
+        font-size: 20px;
+    }
 }

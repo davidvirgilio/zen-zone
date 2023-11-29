@@ -12,7 +12,7 @@ function Face({emotion, width, height, onSelect}:{emotion: string, width: number
   }
 
     return(
-      <button onClick={sendEmotion} className={`button-face mx-auto w-full ${style.face}`}>
+      <button onClick={sendEmotion} className={`mx-auto w-full ${style.face}`}>
         <Image
           src={`/graphics/face-${emotion}.svg`}
           alt={emotion}
@@ -33,8 +33,8 @@ function Emotions({sendToParent}:{sendToParent: (emotion:string)=> void}){
   }
   
   return(
-    <div className="flex grid grid-cols-3 grid-rows-3 items-center max-w-screen-md px-4 py-8 m-auto gap-4">
-            <Face emotion={'anticipation'} width={201} height={205} onSelect={handleEmotion}/>
+    <div className="flex grid grid-cols-3 grid-rows-3 items-center max-w-screen-sm lg:max-w-screen-lg px-4 py-8 m-auto gap-4 sm:gap-12 lg:gap-24">
+            <Face emotion={'anticipation'} width={201} height={200} onSelect={handleEmotion}/>
             <Face emotion={'joy'} width={183} height={183} onSelect={handleEmotion}/>
             <Face emotion={'trust'} width={174.39} height={186.44} onSelect={handleEmotion}/>
             <Face emotion={'anger'} width={185} height={201} onSelect={handleEmotion} />
@@ -63,13 +63,13 @@ function Emotions({sendToParent}:{sendToParent: (emotion:string)=> void}){
               <h2 className="capitalize">{emotion}</h2>
               <button className="px-4" onClick={handleClose}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 36 36" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.52513 29.5251C0.158291 30.892 0.158291 33.108 1.52513 34.4749C2.89196 35.8417 5.10804 35.8417 6.47487 34.4749L18 22.9498L29.5251 34.4749C30.892 35.8417 33.1081 35.8417 34.4749 34.4749C35.8417 33.1081 35.8417 30.892 34.4749 29.5252L22.9497 18L34.4749 6.47487C35.8417 5.10804 35.8417 2.89196 34.4749 1.52513C33.108 0.158291 30.892 0.158293 29.5251 1.52513L18 13.0503L6.47489 1.52517C5.10806 0.158331 2.89198 0.158331 1.52515 1.52517C0.158312 2.892 0.158312 5.10808 1.52515 6.47491L13.0502 18L1.52513 29.5251Z" fill="#6169BC"/>
+                  <path fillRule="evenodd" clipRule="evenodd" d="M1.52513 29.5251C0.158291 30.892 0.158291 33.108 1.52513 34.4749C2.89196 35.8417 5.10804 35.8417 6.47487 34.4749L18 22.9498L29.5251 34.4749C30.892 35.8417 33.1081 35.8417 34.4749 34.4749C35.8417 33.1081 35.8417 30.892 34.4749 29.5252L22.9497 18L34.4749 6.47487C35.8417 5.10804 35.8417 2.89196 34.4749 1.52513C33.108 0.158291 30.892 0.158293 29.5251 1.52513L18 13.0503L6.47489 1.52517C5.10806 0.158331 2.89198 0.158331 1.52515 1.52517C0.158312 2.892 0.158312 5.10808 1.52515 6.47491L13.0502 18L1.52513 29.5251Z" fill="#6169BC"/>
                 </svg>
               </button>
             </div>
-            <div className="flex flex-wrap gap-8 mb-8">
-              <Image className="w-24 h-auto mx-auto" alt={emotion + " emoji"} src={"/graphics/emotion-" + emotion + ".svg"} width={258} height={258}/>
-              <p className="max-w-md w-4/5 lg:max-w-5xl">{emotionData.summary}</p>
+            <div className="flex flex-wrap gap-8 mb-8 items-center">
+              <Image className={`${style.face} mx-auto`} alt={emotion + " emoji"} src={"/graphics/emotion-" + emotion + ".svg"} width={258} height={258}/>
+              <p className="sm:max-w-sm lg:max-w-3xl">{emotionData.summary}</p>
             </div>
             <Link href={"/emotions/" + emotion} className="block w-full text-right hover:underline">Explore more</Link>
             </section>

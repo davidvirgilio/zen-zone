@@ -58,13 +58,6 @@
     height: auto;
   }
 
-  .curve{
-    background: url('/graphics/curve-green.svg');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
   .blueBox h3{
     color: #D9FFCE;
     margin-bottom: 1rem;
@@ -79,6 +72,7 @@
   }
   .blueBox img{
     position: absolute;
+    width: 8rem;
   }
   .blueBox{
     max-width: 770px;
@@ -99,6 +93,11 @@
     height: 100vh;
   }
 
+
+  .face{
+    max-width: 8rem;
+  }
+
   @media (min-width: 1024px) {
     .card {
       width: 23.625rem;
@@ -110,5 +109,12 @@
     .curve img{
       bottom: -0.5rem;
     }
+    .blueBox img{
+      width: max-content;
+    }
+    .face{
+      max-width: max-content;
+    }
+
     
   }

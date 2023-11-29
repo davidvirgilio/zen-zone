@@ -27,9 +27,6 @@ h2{
 h3{
   font-size: 1.1rem;
 }
-.button-face{
-  max-width: 6rem;
-}
 
 main{
   flex: 1;
@@ -79,6 +76,23 @@ figcaption{
   padding: 1rem 0;
 }
 
+@media (min-width: 640px) {
+  .anticipation, .disgust{
+    right: -3rem;
+  }
+  .anticipation, .trust{
+    bottom: -2rem;
+  }
+  .disgust, .surprise{
+    top: -2rem;
+  }
+  .trust, .surprise{
+    left: -3rem;
+  }
+}
+
+
+
 @media (min-width: 1024px) {
   body{
     font-size: 30px;
@@ -97,4 +111,20 @@ figcaption{
     width: 350px;
     height: 360px;
   }
+
+
+  /* Faces arrangement */
+  .anticipation, .disgust{
+    right: -6rem;
+  }
+  .anticipation, .trust{
+    bottom: -4rem;
+  }
+  .disgust, .surprise{
+    top: -4rem;
+  }
+  .trust, .surprise{
+    left: -6rem;
+  }
+  
 }

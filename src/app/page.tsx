@@ -2,6 +2,7 @@
 import {TextSection} from '@/components/components'
 import VideoCarousel from '@/components/Carousel'
 import style from '@/app/ui/styles/videos.module.css'
+import curves from '@/app/ui/styles/curves.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -59,10 +60,13 @@ but they have different meanings.</p>
         </figure>
         <Image className='mx-auto my-4' alt='Mental health illness matrix.' src={"/graphics/infographic-home.png"} width={850} height={621} />
         </section>
-        <section className='py-8'>
+        <section className='py-8 mb-20'>
           <h2 className='px-8 pb-8'> What&apos;s SAIT doing to improve mental health?</h2>
           <VideoCarousel />
         </section>
+        <div className={`${curves.curveHome} ${curves.curve}`}>
+          <Image className="mx-auto max-w-sm w-1/2 relative right-3" src="./graphics/illustration-home.svg" alt="Illustration of a girl with a calm face and plants and flowers growing from her head." width={320} height={424} />
+        </div>
       </main>
   )
 }

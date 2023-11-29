@@ -1,5 +1,3 @@
-import Link from 'next/link'
-import Image from 'next/image'
 import React from 'react'
 import YouTube from 'react-youtube'
 
@@ -9,25 +7,25 @@ type VideoProps = {
   name: string,
 }
 
-// function IntroVideo(){
-//   const opts = {
-//     height: '500',
-//     width: '100%',
-//     playerVars: {
-//       autoplay: 1,
-//       color: '#000000',
-//       controls: 1,
-//       showInfo: 0,
+function relatedVideo(id:string){
+  const opts = {
+    height: '500',
+    width: '100%',
+    playerVars: {
+      autoplay: 1,
+      color: '#000000',
+      controls: 1,
+      showInfo: 0,
 
-//     }
-//   }
-//   return(
-//     <YouTube
-//       videoId = "BpzVvUGfJeA"
-//       opts={opts}
-//     />
-//   )
-// }
+    }
+  }
+  return(
+    <YouTube
+      videoId = {id}
+      opts={opts}
+    />
+  )
+}
 
 
 function Video({name}: VideoProps){
@@ -40,7 +38,7 @@ function Video({name}: VideoProps){
 
 function TextSection({ title , text }:{title:string, text: string}){
     return(
-      <section className='p-10 lg:flex gap-32 lg:px-24 lg:py-28'>
+      <section className='p-10 lg:flex gap-32 lg:px-24 lg:py-28 max-w-screen-2xl mx-auto'>
         <h1 className='mb-8'>{ title }</h1>
         <p className='w-full'>{ text }</p>
       </section>
@@ -52,4 +50,4 @@ function TextSection({ title , text }:{title:string, text: string}){
 
 
 
-export {Video, TextSection} 
+export {Video, TextSection, relatedVideo} 

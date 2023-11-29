@@ -1,7 +1,11 @@
+'use client'
+import style from './ForAFriend.module.css'
+import curves from '@/app/ui/styles/curves.module.css'
 import { TextSection } from "@/components/components"
-import style from '../ui/styles/details.module.css'
 import Image from "next/image"
 import { ResourcesButton } from "@/components/ResourcesButton"
+
+
 
 const tips = [
     {
@@ -19,8 +23,8 @@ const tips = [
         list: [
             "Over the phone.",
             "While driving in the car .",
-            "Over drinks at a favourite hang out.",
-            "While working on a porject",
+            "Over drinks at a favorite hang out.",
+            "While working on a project",
             "\"I haven\’t seen you around much these days. Is everything okay?\"",
             "Don\’t blame or shame your friend",
         ]
@@ -51,9 +55,9 @@ function Tips({index, description, summary, list}:{index: number, description: s
     })
         return(
             <li className="flex items-start gap-2">
-                <span className="block bg-light-green px-8 py-4 rounded-s-lg">{index}</span>
+                <span className="block bg-light-green px-8 py-4 rounded-s-lg font-bold">{index}</span>
                 <details className={` ${style.dropDetails} w-full bg-light-green px-8 py-4 rounded-e-lg`}>
-                    <summary className="flex justify-between items-center">{summary}
+                    <summary className="flex justify-between items-center font-bold">{summary}
                         <span className={style.arrow}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="16" viewBox="0 0 28 16" fill="none">
                                 <path d="M26 2L14 14L2 2" stroke="#6169BC" strokeWidth="3" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
@@ -77,18 +81,18 @@ export default function Page(){
     })
     return(
     <main>
-        <div className="cover-page"></div>
+        <div className={style.cover}><p>Help a friend</p></div>
         <TextSection 
             title={'What can I do?'}
-            text={"Lorem ipsum dolor sit amet consectetur. Sed auctor augue nam faucibus proin. Massa vitae tristique sit at lobortis erat. Ac et euismod neque suspendisse vel elit iaculis id. Imperdiet orci mattis nibh convallis vulputate dictumst."}
+            text={"Being a good friend to someone facing mental health challenges involves creating a safe, non-judgmental space for open communication. Listen actively, validate their emotions, and encourage them to seek professional help. Remind them that they're not alone, and offer a consistent presence in their life. Your support matters."}
         />
-        <section className="mb-16">
-            <h2 className="text-center">How to talk with someone?</h2>
-            <ol className="flex flex-col gap-10 px-4">{tipBanners}</ol>
+        <section className="mb-16 max-w-screen-sm lg:max-w-screen-lg mx-auto lg:mb-52">
+            <h2 className="text-center mb-20">How to approach your friend?</h2>
+            <ol className="flex flex-col gap-10 px-4 lg:mb-52">{tipBanners}</ol>
             <ResourcesButton />
         </section>
-        <div>
-            <Image className={`${style.illustration} mx-auto`} alt="Illustration of two friend talking" src="./graphics/illustration-friends.svg" width={666} height={323} />
+        <div className={`${curves.curve} ${curves.curveForAFriend}`}>
+            <Image className={`mx-auto w-4/5 sm:w-3/5 relative`} alt="Illustration of two friend talking" src="./graphics/illustration-friends.svg" width={666} height={323} />
         </div>
     </main>
 )

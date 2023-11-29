@@ -1,0 +1,31 @@
+
+.curveHome{
+    background: url('/graphics/curve-green.svg');
+}
+.curveForMe{
+    background: url('/graphics/curve-for-me.svg');
+}
+.curveForAFriend{
+    background: url('/graphics/curve-for-a-friend.svg');
+}
+.curveForAFriend img, .curveResources img{
+    bottom: -0.5rem;
+}
+.curveGetHelp{
+    background: url('/graphics/curve-get-help.svg');
+}
+.curveResources{
+    background: url('/graphics/curve-resources.svg');
+}
+
+.curve{
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media (min-width: 1024px) {
+    .curveForAFriend img, .curveResources img{
+        bottom: -1.5rem;
+    }
+}

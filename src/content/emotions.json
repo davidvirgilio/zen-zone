@@ -1,81 +1,121 @@
 [
     { 
       "name": "anticipation",
-      "width": "201",
-      "height": "205",
+      "width": 201,
+      "height": 205,
       "summary": "Anticipation is the emotional state associated with looking forward to future events or outcomes. It involves a sense of excitement or eagerness and can influence decision-making and behaviour in preparation for anticipated events.",
       "description": "Joy is one of 8 primary emotions a person can feel. This emotion occurs when the person experiences an event they perceive to be pleasant, delightful, or successful. Pure joy transpires when the person’s needs, such as physical, mental, occupational, and spiritual, are met. By assessing and asserting things that bring joy, people create principles that guide them through life and stimulate them to continue seeking joy.",
       "style": {"backgroundColor": "#FCBE83"},
-      "backgroundColors": {"fill": "#F97F1299", "outsideStroke": "#F97F12"}
+      "backgroundColors": {"fill": "#FCBE8333", "outsideStroke": "#FEDEBF"},
+      "videos": [
+        {"title": "Get to know your emotions: Joy", "url": "https://www.youtube.com/watch?v=hIGF-Fkxbk0"},
+        {"title": "Strategies for when perfectionism gets in the way.", "url": "https://sait.campuswellplus.com?video=3058&feed=98"},
+        {"title": "Guide to a meditation space that works", "url": "https://sait.campuswellplus.com?video=2710&feed=115"}
+      ]
     },
     { 
       "name": "joy",
-      "width": "183",
-      "height": "183",
+      "width": 183,
+      "height": 183,
       "summary": " Joy is the positive emotion associated with feeling happy, satisfied, and content. It often arises in response to enjoyable experiences and contributes to an overall sense of well-being.",
       "description": "Joy is one of 8 primary emotions a person can feel. This emotion occurs when the person experiences an event they perceive to be pleasant, delightful, or successful. Pure joy transpires when the person’s needs, such as physical, mental, occupational, and spiritual, are met. By assessing and asserting things that bring joy, people create principles that guide them through life and stimulate them to continue seeking joy.",
       "style": {"backgroundColor": "#FFFCD9"},
-      "backgroundColors": {"fill": "#FEF6A0", "outsideStroke": "#FAF18F"}
+      "backgroundColors": {"fill": "#FCED231A", "outsideStroke": "#FCED2380"}, 
+      "videos": [
+        {"title": "Get to know your emotions: Joy", "url": "https://www.youtube.com/watch?v=hIGF-Fkxbk0"},
+        {"title": "Strategies for when perfectionism gets in the way.", "url": "https://sait.campuswellplus.com?video=3058&feed=98"},
+        {"title": "Guide to a meditation space that works", "url": "https://sait.campuswellplus.com?video=2710&feed=115"}
+      ]
   
     },
     { 
       "name": "trust",
-      "width": "174.39",
-      "height": "186.44",
+      "width": 174.39,
+      "height": 186.44,
       "summary": "It's the feeling of confidence and dependability in people or things that you believe in and can count on. This feeling forms the basis of dependable relationships, fostering the belief that others will act in predictable and positive ways.",
       "description": "Description of the feeling. Lorem ipsum dolor sit amet consectetur. Sed auctor augue nam faucibus proin. Massa vitae tristique sit at lobortis erat. Ac et euismod neque suspendisse vel elit iaculis id. Imperdiet orci mattis nibh convallis vulputate dictumst facilisis.",
       "style": {"backgroundColor": "#E8FFD8"},
-      "backgroundColors": {"fill": "#CEFFAE", "outsideStroke": "#C9FFA5"}
+      "backgroundColors": {"fill": "#CEFFAE33", "outsideStroke": "#C9FFA5"},
+      "videos": [
+        {"title": "Get to know your emotions: Joy", "url": "https://www.youtube.com/watch?v=hIGF-Fkxbk0"},
+        {"title": "Strategies for when perfectionism gets in the way.", "url": "https://sait.campuswellplus.com?video=3058&feed=98"},
+        {"title": "Guide to a meditation space that works", "url": "https://sait.campuswellplus.com?video=2710&feed=115"}
+      ]
   
     },
     { 
       "name":"anger",
-      "width": "185",
-      "height": "201",
+      "width": 185,
+      "height": 201,
       "summary": "Anger is a strong emotional reaction characterized by displeasure, irritation, or hostility. It can be triggered by perceived injustice, frustration, or a threat to one's well-being, motivating assertive action.",
       "description": "Description of the feeling. Lorem ipsum dolor sit amet consectetur. Sed auctor augue nam faucibus proin. Massa vitae tristique sit at lobortis erat. Ac et euismod neque suspendisse vel elit iaculis id. Imperdiet orci mattis nibh convallis vulputate dictumst facilisis.",
       "style": {"backgroundColor": "#EF8680"},
-      "backgroundColors":{"fill": "#E5383399", "outsideStroke": "#E53833"}
+      "backgroundColors":{"fill": "#F6418236", "outsideStroke": "#C92734"},
+      "videos": [
+        {"title": "Get to know your emotions: Joy", "url": "https://www.youtube.com/watch?v=hIGF-Fkxbk0"},
+        {"title": "Strategies for when perfectionism gets in the way.", "url": "https://sait.campuswellplus.com?video=3058&feed=98"},
+        {"title": "Guide to a meditation space that works", "url": "https://sait.campuswellplus.com?video=2710&feed=115"}
+      ]
   
     },
     { 
       "name": "fear",
-      "width": "179",
-      "height": "179",
+      "width": 179,
+      "height": 179,
       "summary": "Fear is an emotional response to perceived threats, dangers, or harm. It triggers a heightened state of alertness, preparing the body for a fight-or-flight reaction to ensure survival.",
       "description": "Description of the feeling. Lorem ipsum dolor sit amet consectetur. Sed auctor augue nam faucibus proin. Massa vitae tristique sit at lobortis erat. Ac et euismod neque suspendisse vel elit iaculis id. Imperdiet orci mattis nibh convallis vulputate dictumst facilisis.",
       "style": {"backgroundColor": "#9DDAB9"},
-      "backgroundColors":{"fill": "#5BC49199", "outsideStroke": "#5BC491"}
+      "backgroundColors":{"fill": "#9DDAB933", "outsideStroke": "#77CC9E"},
+      "videos": [
+        {"title": "Get to know your emotions: Joy", "url": "https://www.youtube.com/watch?v=hIGF-Fkxbk0"},
+        {"title": "Strategies for when perfectionism gets in the way.", "url": "https://sait.campuswellplus.com?video=3058&feed=98"},
+        {"title": "Guide to a meditation space that works", "url": "https://sait.campuswellplus.com?video=2710&feed=115"}
+      ]
   
     },
     { 
       "name": "disgust",
-      "width": "189.1",
-      "height": "195.28",
+      "width": 189.1,
+      "height": 195.28,
       "summary": "Disgust is the emotional response to something unpleasant, offensive, or repulsive. It serves as a protective mechanism, encouraging avoidance of potentially harmful or contaminated stimuli.",
       "description": "Description of the feeling. Lorem ipsum dolor sit amet consectetur. Sed auctor augue nam faucibus proin. Massa vitae tristique sit at lobortis erat. Ac et euismod neque suspendisse vel elit iaculis id. Imperdiet orci mattis nibh convallis vulputate dictumst facilisis.",
       "style": {"backgroundColor": "#B189BD"},
-      "backgroundColors":{"fill": "#7D3C9999", "outsideStroke": "#7D3C99"}
+      "backgroundColors":{"fill": "#9B69AF33", "outsideStroke": "#9B69AF"},
+      "videos": [
+        {"title": "Get to know your emotions: Joy", "url": "https://www.youtube.com/watch?v=hIGF-Fkxbk0"},
+        {"title": "Strategies for when perfectionism gets in the way.", "url": "https://sait.campuswellplus.com?video=3058&feed=98"},
+        {"title": "Guide to a meditation space that works", "url": "https://sait.campuswellplus.com?video=2710&feed=115"}
+      ]
   
     },
     { 
       "name": "sadness",
-      "width": "187",
-      "height": "191",
+      "width": 187,
+      "height": 191,
       "summary": "Sadness is an emotional state characterized by unhappiness or sorrow. It often arises in response to loss, disappointment, or challenging life circumstances, prompting reflection and adaptation.",
       "description": "Description of the feeling. Lorem ipsum dolor sit amet consectetur. Sed auctor augue nam faucibus proin. Massa vitae tristique sit at lobortis erat. Ac et euismod neque suspendisse vel elit iaculis id. Imperdiet orci mattis nibh convallis vulputate dictumst facilisis.",
       "style": {"backgroundColor": "#8DAED3"},
-      "backgroundColors": {"fill": "#8DAED3", "outsideStroke": "#73A2D6"}
+      "backgroundColors": {"fill": "#C6DDE580", "outsideStroke": "#6A92C1"},
+      "videos": [
+        {"title": "Get to know your emotions: Joy", "url": "https://www.youtube.com/watch?v=hIGF-Fkxbk0"},
+        {"title": "Strategies for when perfectionism gets in the way.", "url": "https://sait.campuswellplus.com?video=3058&feed=98"},
+        {"title": "Guide to a meditation space that works", "url": "https://sait.campuswellplus.com?video=2710&feed=115"}
+      ]
   
     },
     { 
       "name": "surprise",
-      "width": "197",
-      "height": "198",
+      "width": 197,
+      "height": 198,
       "summary": "Surprise is the emotional reaction to unexpected events or revelations. It creates a momentary shift in attention and can range from positive amazement to negative shock, depending on the nature of the surprise.",
       "description": "Description of the feeling. Lorem ipsum dolor sit amet consectetur. Sed auctor augue nam faucibus proin. Massa vitae tristique sit at lobortis erat. Ac et euismod neque suspendisse vel elit iaculis id. Imperdiet orci mattis nibh convallis vulputate dictumst facilisis.",
       "style": {"backgroundColor": "#B6F3EA"},
-      "backgroundColors": {"fill": "#85EDE399", "outsideStroke": "#85EDE3"}
+      "backgroundColors": {"fill": "#A6EDE533", "outsideStroke": "#A6EDE5"},
+      "videos": [
+        {"title": "Get to know your emotions: Joy", "url": "https://www.youtube.com/watch?v=hIGF-Fkxbk0"},
+        {"title": "Strategies for when perfectionism gets in the way.", "url": "https://sait.campuswellplus.com?video=3058&feed=98"},
+        {"title": "Guide to a meditation space that works", "url": "https://sait.campuswellplus.com?video=2710&feed=115"}
+      ]
   
     }
   ]

@@ -47,5 +47,9 @@ Link{
         height: 89px;
         width: 128px;
     }
+    header .menu a:hover{
+        color: inherit;
+        text-decoration: underline;
+    }
 }
 
