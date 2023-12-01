@@ -10,7 +10,7 @@ import curves from '@/app/ui/styles/curves.module.css'
 
 export default function Page(){
     return(
-      <div className="relative">
+      <div>
         <EmotionsWheel />
 
       
