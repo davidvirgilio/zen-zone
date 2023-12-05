@@ -101,6 +101,7 @@
     max-width: 8rem;
   }
 
+
   @media (min-width: 1024px) {
     .card {
       width: 23.625rem;

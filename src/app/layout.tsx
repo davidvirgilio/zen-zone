@@ -3,8 +3,10 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import './globals.css'
 import './ui/styles/statics.css'
-
 import { poppins } from './ui/fonts'
+import GoogleAnalytics from '@/components/analytics'
+
+
 
 export const metadata: Metadata = {
   title: 'Zen Zone',
@@ -16,6 +18,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  
 
   return (
     <html lang="en">
@@ -23,6 +26,10 @@ export default function RootLayout({
         <Header />
           {children}
         <Footer />
+        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
+            <GoogleAnalytics ga_id= 
+            {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+          ) : null}
       </body>
     </html>
   )
