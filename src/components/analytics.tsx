@@ -1,24 +1,11 @@
-import Script from "next/script";
+'use client'
+import ReactGA from 'react-ga4';
+import { use, useEffect } from 'react';
 
-const GoogleAnalytics = ({ ga_id }: { ga_id: string }) => (
-  <>
-    <Script
-      async
-      src={`https://www.googletagmanager.com/gtag/js? 
-      id=${ga_id}`}
-    ></Script>
-    <Script
-      id="google-analytics"
-      dangerouslySetInnerHTML={{
-        __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
 
-          gtag('config', '${ga_id}');
-        `,
-      }}
-    ></Script>
-  </>
-);
-export default GoogleAnalytics;
+export default function Analytics(){
+    useEffect(()=>{
+        ReactGA.initialize('G-HNGR2YN2DN');
+        ReactGA.send({hitType: "pageview", page: "/"})
+    })
+}

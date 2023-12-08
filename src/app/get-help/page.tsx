@@ -13,10 +13,15 @@ function Contacts(){
                 <div key={index} className="contact flex flex-col gap-2 bg-white rounded-2xl font-medium p-2">
                     <p>{contact.name}</p>
                     <div className="flex justify-between">
-                        <p>{contact.phoneNumber}</p>
+                        <div className="flex flex-col gap-1">
+                            {contact.phoneNumber && <a href={`tel:${contact.phoneNumber}`}>{contact.phoneNumber}</a>}
+                            {contact.email && <a className={`underline`} href={`mailto:${contact.email}`}>{contact.email}</a>}
+                            {contact.extra && <p>{contact.extra}</p>}
+                            {contact.details && <p>{contact.details}</p>}
+                        </div>
                         <div className="flex gap-2">
-                            <a className={`${style.icon}`} href={`mailto:${contact.email}`}><Image alt="Email" src="/graphics/icon-email.png" width={90} height={90}/></a>
-                            <a className={`${style.icon}`} href={`tel:${contact.phoneNumber}`}><Image alt="Call" src={"/graphics/icon-phone.png"} width={90} height={90}/></a>
+                            {contact.email && <a className={`${style.icon}`} href={`mailto:${contact.email}`}><Image alt="Email" src="/graphics/icon-email.png" width={90} height={90}/></a>}
+                            {contact.phoneNumber && <a className={`${style.icon}`} href={`tel:${contact.phoneNumber}`}><Image alt="Call" src={"/graphics/icon-phone.png"} width={90} height={90}/></a>}
                         </div>
                     </div>
                 </div>

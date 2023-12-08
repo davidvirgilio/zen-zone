@@ -1,10 +1,12 @@
 'use client'
 import {TextSection} from '@/components/components'
 import VideoCarousel from '@/components/Carousel'
-import style from '@/app/ui/styles/videos.module.css'
+import style from '@/app/ui/styles/home.module.css'
 import curves from '@/app/ui/styles/curves.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
+import React, { useState, useRef} from 'react'
+import { Video } from '@/components/components'
 
 function HomeButton({text, page, image}:{text:string, page: string, image: string}){
   return(
@@ -18,11 +20,11 @@ function HomeButton({text, page, image}:{text:string, page: string, image: strin
 function HomeButtons(){
   return(
     <section className='p-8 bg-light-green'>
-      <h2 className='text-center'>What statement better describes you?</h2>
+      <h2 className='text-center'>Zen Zone is here to provide support</h2>
       <div className='flex py-10 gap-4 md:gap-12 justify-center'>
         <HomeButton text= {'For me'} page={'for-me'} image={'/graphics/icon-mind.svg'}/>
       <HomeButton text= {'For a friend'} page={'for-a-friend'}  image={'/graphics/icon-hands.svg'}/>
-        <HomeButton text= {'Get Help Now'} page={'get-help'} image={'/graphics/icon-heart.svg'}/>
+        <HomeButton text= {'During emergency'} page={'get-help'} image={'/graphics/icon-heart.svg'}/>
       </div>
       <p className='text-center mx-auto md:w-4/5'>No matter what you&apos;re going through, there are ways to take care of yourself and those close to you.</p>
     </section>
@@ -31,37 +33,57 @@ function HomeButtons(){
 
 
 export default function Home() {
+  // const [play, setPlay] = useState(true)
+  // const videoRef = useRef<HTMLVideoElement | null>(null)
+
+
+  // function playVideo(){
+  //   if(videoRef.current){
+  //     videoRef.current.play();
+  //     setPlay(false)
+  //   }
+  // }
 
   return (
       <main>
         <div className={style.video}>
-          <iframe className={style.intro} src="https://player.vimeo.com/video/888058949?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" width="100%" height="max-content" frame-order="0" allow="autoplay; fullscreen; picture-in-picture" allow-fullscreen="true"></iframe>
+          {/* {play && 
+            <div className={style.overlay}>
+            <span>Welcome to Zen Zone</span>
+            <button onClick={playVideo}><Image alt='Play video' src={'/graphics/play-white.svg'} width={100} height={100} /></button>
+          </div>
+          } */}
+          {/* <video controls poster="/video/thumbnail.jpg">
+            <source  src={"/video/intro.mp4"} type='video/mp4'/>  
+          </video> */}
+          <iframe
+            title="Intro"
+            src="https://player.vimeo.com/video/888058949?h=ff72dd1fb4"
+            width="640"
+            height="360"
+            allowFullScreen
+          ></iframe>
         </div>
-        {/* <IntroVideo /> */}
-        <TextSection
-          title = {"Mental Health Matters at SAIT"}
-          text = {"As SAIT’s students, we recognize the importance of mental health and are committed to fostering a supportive community. This website serves as a comprehensive resource hub, offering vital information, helpful resources, and a compassionate community for everyone navigating the complexities of mental health."}
-        />
+        <section className='p-10 lg:flex gap-32 lg:px-24 lg:py-28 max-w-screen-2xl mx-auto'>
+          <h1 className='mb-8'>Mental Health Matters at SAIT</h1>
+          <div>
+            <p className='w-full mb-4'>Mental health - a vital part of every human that is often overlooked. If you or someone you know are facing the challenges of mental health upkeep, ZenZone is here to guide and assist through it all.</p>
+            <p className='w-full font-bold'>In event of emergency or crisis, please call 911 or Alberta Mental Health Help Line at <a href='tel:+18773032642'>1 (877) 303-2642</a></p>
+          </div>
+         </section> 
+          <h2 className='p-10 text-center text-3xl'>Welcome Yo Zen Zone</h2>
         <HomeButtons />
         <section className='text-center p-10 lg:px-24 lg:py-28 flex flex-col gap-4'>
-        <figure>
-          <blockquote>
-            <p className='font-bold'>&quot;There is no health without mental health. &quot; </p>
-          </blockquote>
-          <figcaption>(World Health Organization)</figcaption>
-        </figure>
-        <figure>
-          <blockquote>
-            <p>Just like everyone has physical health, everyone also has mental health.
-            &quot;Mental health&quot; and &quot;mental illness&quot; are sometimes used interchangeably, 
-but they have different meanings.</p>
-          </blockquote>
-          <figcaption>Canadian Society for Medical Laboratory Science on <cite><Link className='external-link' href={"https://mentalhealth.csmls.org/i-am-an-individual/"}>I am and individual </Link></cite></figcaption>
-        </figure>
-        <Image className='mx-auto my-4' alt='Mental health illness matrix.' src={"/graphics/infographic-home.png"} width={850} height={621} />
+        <h2>Health vs. Illness</h2>
+        <div>
+          <p className='mb-8'>When people discuss mental health, the words <em>“health”</em> and <em>“illness”</em> are used interchangeably, since there is a connection: an illness can alter your health.</p>
+          <p className='mb-8'>However, there is a drastic distinction between these two concepts. <em>A mental illness is a medical condition, while mental health encompasses overall wellness</em> of the person&apos;s mind and incorporeal being. </p>
+          <p>Alas, in the majority of conversations around mental wellbeing the participants associate mental health with illnesses, creating negative stigmas around both.</p>
+        </div>
+        <Image className='mx-auto my-4' alt='Mental health illness matrix.' src={"/graphics/infographic-home.png"} width={923} height={519} />
         </section>
         <section className='py-8 mb-20'>
-          <h2 className='px-8 pb-8'> What&apos;s SAIT doing to improve mental health?</h2>
+          <h2 className='px-8 pb-8 text-center'> What&apos;s SAIT doing to improve mental health?</h2>
           <VideoCarousel />
         </section>
         <div className={`${curves.curveHome} ${curves.curve}`}>

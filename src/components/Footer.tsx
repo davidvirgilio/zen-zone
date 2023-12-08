@@ -30,7 +30,7 @@ export default function Footer(){
                     <li><Link href='/resources'>Resources</Link></li>
                     <li><Link href='/get-help'>Get help</Link></li>
                 </ul>
-                <ul className="flex gap-5 justify-center pb-4">
+                <ul className="flex gap-5 justify-center pb-4 hidden">
                     <li><Link href="#"><Image alt="Instagram" src="/graphics/icon-instagram.svg" width={30} height={30} /></Link></li>
                     <li><Link href="#"><Image alt="Facebook" src="/graphics/icon-facebook.svg" width={30} height={30} /></Link></li>
                     <li><Link href="#"><Image alt="YouTube" src="/graphics/icon-youtube.svg" width={30} height={30} /></Link></li>

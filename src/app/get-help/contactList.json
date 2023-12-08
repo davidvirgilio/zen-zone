@@ -1,34 +1,26 @@
 [
     {
-        "level": "Emergency Contacts",
+        "level": "Critical Urgency",
         "color": {"backgroundColor": "#EF8680"},
         "contacts": [
-            { "name": "Contact Name", "phoneNumber": "+1 (503) 284-7969", "email": "hello@zenzonewell.ca"},
-            { "name": "Contact Name", "phoneNumber": "+1 (503) 284-7969", "email": "hello@zenzonewell.ca"}
+            { "name": "AHS Mental Health Help Line", "phoneNumber": "1 (877) 303 2642", "email": "", "details": "", "extra": ""},
+            { "name": "Distress Centre Calgary", "phoneNumber": "1 (403) 266 4357", "email": "", "details": "", "extra": ""}
         ]
     },
     {
-        "level": "High Level of Urgency",
-        "color": {"backgroundColor": "#FCBE83"},
-        "contacts": [
-            { "name": "Contact Name", "phoneNumber": "+1 (503) 284-7969", "email": "hello@zenzonewell.ca"},
-            { "name": "Contact Name", "phoneNumber": "+1 (503) 284-7969", "email": "hello@zenzonewell.ca"}
-        ]
-    },
-    {
-        "level": "Medium Level of Urgency",
+        "level": "Medium Urgency",
         "color": {"backgroundColor": "#FEF6A0"},
         "contacts": [
-            { "name": "Contact Name", "phoneNumber": "+1 (503) 284-7969", "email": "hello@zenzonewell.ca"},
-            { "name": "Contact Name", "phoneNumber": "+1 (503) 284-7969", "email": "hello@zenzonewell.ca"}
+            { "name": "SAIT Student Development and Counselling", "phoneNumber": "1 (403) 284 7023", "email": "counselling@sait.ca", "details": "Available Monday to Friday, from 8:30 am to 4:15 pm", "extra": ""},
+            { "name": "Headversity Resilience Training App", "phoneNumber": "", "email": "", "details": "Available to download for free on iOS and Android", "extra": "Invite Code: SAITR8"}
         ]
-    },
+    }, 
     {
-        "level": "Low Level of Urgency",
+        "level": "Low Urgency",
         "color": {"backgroundColor": "#CEFFAE"},
         "contacts": [
-            { "name": "Contact Name", "phoneNumber": "+1 (503) 284-7969", "email": "hello@zenzonewell.ca"},
-            { "name": "Contact Name", "phoneNumber": "+1 (503) 284-7969", "email": "hello@zenzonewell.ca"}
+            { "name": "SAITSA", "phoneNumber": "1 (403) 210 4323", "email": "saitsa.info@edu.sait.ca", "details": "Available Monday to Friday, from 9:00 am to 4:00 pm", "extra": ""},
+            { "name": "Friends and family members", "phoneNumber": "", "email": "", "details": "Consider discussing what you are experiencing with people close to you, such as friends and family members.", "extra": ""}
         ]
     }
 ]
