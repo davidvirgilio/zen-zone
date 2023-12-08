@@ -33,29 +33,36 @@ function HomeButtons(){
 
 
 export default function Home() {
-  const [play, setPlay] = useState(true)
-  const videoRef = useRef<HTMLVideoElement | null>(null)
+  // const [play, setPlay] = useState(true)
+  // const videoRef = useRef<HTMLVideoElement | null>(null)
 
 
-  function playVideo(){
-    if(videoRef.current){
-      videoRef.current.play();
-      setPlay(false)
-    }
-  }
+  // function playVideo(){
+  //   if(videoRef.current){
+  //     videoRef.current.play();
+  //     setPlay(false)
+  //   }
+  // }
 
   return (
       <main>
         <div className={style.video}>
-          {play && 
+          {/* {play && 
             <div className={style.overlay}>
             <span>Welcome to Zen Zone</span>
             <button onClick={playVideo}><Image alt='Play video' src={'/graphics/play-white.svg'} width={100} height={100} /></button>
           </div>
-          }
-          <video ref={videoRef} controls poster="/video/thumbnail.jpg">
-        <source  src={"/video/intro.mp4"} type='video/mp4'/>  
-      </video>
+          } */}
+          {/* <video controls poster="/video/thumbnail.jpg">
+            <source  src={"/video/intro.mp4"} type='video/mp4'/>  
+          </video> */}
+          <iframe
+            title="Intro"
+            src="https://player.vimeo.com/video/888058949?h=ff72dd1fb4"
+            width="640"
+            height="360"
+            allowFullScreen
+          ></iframe>
         </div>
         <section className='p-10 lg:flex gap-32 lg:px-24 lg:py-28 max-w-screen-2xl mx-auto'>
           <h1 className='mb-8'>Mental Health Matters at SAIT</h1>
