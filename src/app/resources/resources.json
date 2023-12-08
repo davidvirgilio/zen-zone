@@ -1,0 +1,189 @@
+[
+    {
+        "category": "Emergency and Safety",
+        "list": [
+            {
+                "name": "Distress Centre Calgary",
+                "description": "If you are experiencing a crisis or seek immediate counsel, Distress Centre Calgary has trained professionals who offer support and allow you to feel heard.",
+                "details": "24/7 Support",
+                "link": "https://distresscentre.com",
+                "email": "",
+                "tel": "1 (403) 266 4357",
+                "location": "",
+                "weekdays": "",
+                "weekends": ""
+
+            }, 
+            {
+                "name": "AHS Help Line",
+                "description": "Alberta Health Services Mental Health Help Line is a service that provides support, information and referrals to Albertans experiencing mental health concerns.",
+                "details": "24/7 support",
+                "link": "https://www.albertahealthservices.ca/findhealth/Service.aspx?id=6810&serviceAtFacilityID=1047134",
+                "email": "",
+                "tel": "1 (877) 303 2642",
+                "location": "",
+                "weekdays": "",
+                "weekends": ""
+
+            }, 
+            {
+                "name": "911",
+                "description": "Call the three-digit emergency number in immediate life-threatening situations, if your or someone's life is in imminent danger or there is a threat to public safety. Emergency services are trained to handle mental health crises and can provide swift intervention to ensure safety and access to appropriate care. If unsure about the severity of the situation, it is always better to err on the side of caution and seek professional help.",
+                "details": "24/7 support",
+                "link": "",
+                "email": "",
+                "tel": "911",
+                "location": "",
+                "weekdays": "",
+                "weekends": ""
+
+
+            }, 
+            {
+                "name": "Campus Security",
+                "description": "In the event of an on-campus emergency at SAIT: Call 1 (403) 284 8000. For less urgent assistance, such as on-campus escorts, room openings, reporting thefts, break-ins, or vandalism:Call 1 (403) 284 8530",
+                "details": "24/7 support",
+                "link": "https://www.sait.ca/about-sait/help-and-security/campus-security",
+                "email": "campus.security@sait.ca",
+                "tel": "1 (403) 266 4357",
+                "location": "",
+                "weekdays": "",
+                "weekends": ""
+
+
+            }
+        ]
+    },
+    {
+        "category": "On Campus",
+        "list": [
+            {
+                "name": "Student Development and Counselling",
+                "description": "Student Development and Counseling strives to enhance the well-being and success of SAIT students by providing free in-person, telephone, or video appointments for current SAIT students. Walk-ins are welcome. Virtual counseling is accessible by appointment in advance only, offered between 9 am and 4 pm. Please note that students must reside in the province of Alberta. For SAIT students residing outside of Alberta, Student Development and Counselling offers referrals to alternative resources.",
+                "details": "",
+                "link": "https://www.sait.ca/student-life/student-development-and-counselling",
+                "email": "counselling@sait.ca",
+                "tel": "1 (403) 284 7023",
+                "location": "Located in room AA205, Heritage Hall, SAIT Main Campus.",
+                "weekdays": "8:30 a.m. - 4:15 p.m.",
+                "weekends": ""
+
+            }, 
+            {
+                "name": "Wellness Centre",
+                "description": "SAIT's Wellness Centre, currently housed in a temporary location, welcomes SAIT's present students and staff. The facility is equipped with exercise machines, weights, and a full-size basketball court that can be utilized for badminton and volleyball as well. During your visit, you can borrow various equipment for free, such as basketballs, volleyballs, badminton gear, and more. Access to the facility requires a SAIT eCard.",
+                "details": "",
+                "link": "https://www.sait.ca/student-life/trojans-athletics-and-recreation/athletics-centre",
+                "email": "campus.centre@sait.ca",
+                "tel": "1 (403) 284 8027",
+                "location": "Located behind the East Hall residence on SAIT's main campus.",
+                "weekdays": "6:00 a.m. - 11:00 p.m.",
+                "weekends": "8:00 a.m. - 10:00 p.m."
+
+            }, 
+            {
+                "name": "Natoysopoyiis",
+                "description": "SAIT Main Campus. The Natoysopoyiis, meaning \"holy wind lodge,\" serves as a gathering space for Canadian Indigenous (First Nations, Metis, and Inuit) students at SAIT. The Lodge provides an environment for connecting with peers and accessing advising services. Functioning as a hub of learning, Natoysopoyiis extends an invitation to the entire SAIT community to explore and understand the histories and cultures of First Nations, Metis, and Inuit people.",
+                "details": "Friday, open until 4:00 p.m.",
+                "link": "https://www.sait.ca/indigenous-students/natoysopoyiis",
+                "email": "chinook.lodge@sait.ca",
+                "tel": "1 (403) 210 4028",
+                "location": "Located in room NN108, Senator Burns building.",
+                "weekdays": "8:00 a.m. - 4:30 p.m.",
+                "weekends": ""
+
+            }, 
+            {
+                "name": "Interfaith Centre",
+                "description": "The Interfaith Centre is a community hub at SAIT that embraces inclusivity as the norm, fosters an environment where questions are encouraged, and where the rich tapestry of people and cultures is both explored and celebrated. Committed to bolstering student success, the Centre's staff and chaplains are available for in-person or virtual assistance. If you require spiritual support, the Interfaith Centre's team kindly urges you to reach out to them.",
+                "details": "",
+                "link": "https://www.sait.ca/student-life/get-involved/interfaith-centre",
+                "email": "student.engagement@sait.ca",
+                "tel": "",
+                "location": "Located in room MB305, Stan Grad Centre building, SAIT Main Campus.",
+                "weekdays": "8 a.m. - 4:30 p.m.",
+                "weekends": ""
+
+            }, 
+            {
+                "name": "SAITSA",
+                "description": "SAITSA, a non-profit organization led by students, is dedicated to representing and supporting students comprehensively. Whether it's providing financial assistance or offering resources for well-being, the SAIT Students' Association is committed to ensuring that every student has the optimal experience throughout their studies at SAIT.",
+                "details": "",
+                "link": "https://saitsa.com/",
+                "email": "saitsa.info@edu.sait.ca",
+                "tel": "",
+                "location": "Located in room MC107, Stan Grad Centre building, SAIT Main Campus.",
+                "weekdays": "9 a.m. - 4 p.m.",
+                "weekends": ""
+
+
+            }
+        ]
+    },
+    {
+        "category": "Online",
+        "list": [
+            {
+                "name": "SAIT Campus Well",
+                "description": "SAIT Campus Well serves as an digital health and wellness magazine tailored for students attending SAIT. The web-portal discusses a variety of topics such as physical and mental health, life skills, relationships, and more, providing valuable insights and related resources. You can stay connected with the latest news in health and wellness and get weekly updates when you sign up to receive e-mail.",
+                "details": "Available to download for free on iOS and Android",
+                "link": "https://sait.campuswell.ca/",
+                "tel": "",
+                "location": "",
+                "weekdays": "",
+                "weekends": ""
+
+
+            }, 
+            {
+                "name": "Headversity Resilience Training",
+                "description": "Headversity is a dedicated resilience coaching platform, which SAIT students can access for free through the mobile app or web-browser with an invite code below. Headversity provides resources to cultivate essential skills and attributes like self-expertise, mindfulness, mental health and energy management. Embark on a transformative experience and thrive amidst adversity.",
+                "details": "Available to download for free on iOS and Android. Invitation Code: SAITR8",
+                "link": "https://apps.apple.com/us/app/headversity/id1480434092",
+                "tel": "",
+                "location": "",
+                "weekdays": "",
+                "weekends": ""
+
+
+            }, 
+            {
+                "name": "Therapy Assistance Online (TAO)",
+                "description": "TAO is a hub with over 150 brief yet impactful educational sessions addressing more than 50 topics and skills related to mental health, wellness, and substance use issues. The interactive sessions, mindfulness exercises, and practice tools within TAO aim to assist you in achieving your goals. Sign up with your SAIT email address to enjoy free, unlimited access to TAO's self-help content.",
+                "details": "Use your SAIT email address to sign up.",
+                "link": "https://ca.taoconnect.org/register",
+                "tel": "",
+                "location": "",
+                "weekdays": "",
+                "weekends": ""
+
+
+
+            }, 
+            {
+                "name": "Resilience 101",
+                "description": "SAIT offers a co-curricular activity Resilience 101. The program involves approximately 12 hours of online content. Participants progress at their own pace, with all responses on personal logs and wellness measures kept confidential. There is no cost for students to participate, and specific registration instructions will be provided upon contacting resilience.101@sait.ca.",
+                "details": "Delivered through TAO",
+                "link": "https://www.sait.ca/student-life/student-development-and-counselling/self-help-tools-and-resources#:~:text=Resilience%20101%3A%20Tools%20for%20lasting%20success",
+                "email": "resilience.101@sait.ca",
+                "tel": "",
+                "location": "",
+                "weekdays": "",
+                "weekends": ""
+
+
+            }, 
+            {
+                "name": "SAIT YouTube Mindfulness Playlist",
+                "description": "Indulge in a moment of tranquility by watching one or all of these calming YouTube videos from SAIT. Whether you're feeling fatigued, overwhelmed, or simply need a brief five-minute respite, the bitesize mindfulness videos in the playlist are crafted to bring some serenity and focus to your day. Enjoy a rejuvenating break to enhance your overall well-being.",
+                "link": "https://youtube.com/playlist?list=PLJO_Nlhr0mp2jrMGRCw6BIydTIDfgJEow&si=k3elgXG3pGH4rqj9",
+                "tel": "",
+                "location": "",
+                "weekdays": "",
+                "weekends": ""
+
+
+            }
+        ]
+    }
+]

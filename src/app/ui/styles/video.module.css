@@ -1,0 +1,40 @@
+/* video.module.css */
+.carouselContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    aspect-ratio: 16/9;
+    height: auto;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 100vw; /* Set the width based on your design */
+    height: auto; /* Set the height based on your design */
+    overflow: hidden;
+  }
+
+  .carouselContainer, .carouselContainer iframe, .videoContainer{
+    width: 100%;
+    height: 100%;
+  }
+
+  .carouselContainer button span svg{
+    width: 3rem;
+    height: auto;
+  }
+
+  
+.carouselContainer button span{
+    width: 5rem;
+    aspect-ratio: 1/1;
+    height: auto;
+  }
+
+  @media (min-width:1024) {
+    .carouselContainer{
+        max-width: 80%;
+    }
+  }
+  

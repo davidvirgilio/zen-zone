@@ -36,11 +36,12 @@ function Video({name}: VideoProps){
     )
 }
 
-function TextSection({ title , text }:{title:string, text: string}){
+function TextSection({ title , text, textTwo="" }:{title:string, text: string, textTwo: string}){
     return(
       <section className='p-10 lg:flex gap-32 lg:px-24 lg:py-28 max-w-screen-2xl mx-auto'>
         <h1 className='mb-8'>{ title }</h1>
-        <p className='w-full'>{ text }</p>
+        <p className='w-full mb-4'>{ text }</p>
+        <p className='w-full font-bold'>{ textTwo }</p>
       </section>
     )}
 

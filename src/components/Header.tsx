@@ -9,7 +9,7 @@ import { useState } from "react";
   return(
 
     <header className="bg-zen">
-        <Navbar fluid className="bg-zen p-6 md:py-8 md:px-16 lg:py-14 lg:px-24 relative">
+        <Navbar fluid className="bg-zen p-6 md:px-16 lg:px-24 relative">
           <NavbarBrand as={Link} href="/" >
               <svg className="h-12 w-auto logo" xmlns="http://www.w3.org/2000/svg" width={128} height={89} viewBox={`0 0 128 89`} aria-label="Zen Zone logo">
                   <g clipPath="url(#clip0_423_96)">
@@ -34,7 +34,7 @@ import { useState } from "react";
             <Navbar.Link as={Link} href="/for-me"> For me</Navbar.Link>
             <Navbar.Link as={Link} href="/for-a-friend"> For a friend</Navbar.Link>
             <Navbar.Link as={Link} href="/resources"> Resources</Navbar.Link>
-            <Navbar.Link as={Link} href="/get-help"> Get Help Now</Navbar.Link>
+            <Navbar.Link as={Link} href="/get-help"> Get Help</Navbar.Link>
           </Navbar.Collapse>
         </Navbar>
     </header>

@@ -76,6 +76,11 @@ figcaption{
   padding: 1rem 0;
 }
 
+em, cite{
+  font-weight: 600;
+  font-style: normal;
+}
+
 @media (min-width: 640px) {
   .anticipation, .disgust{
     right: -3rem;

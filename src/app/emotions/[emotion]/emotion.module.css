@@ -12,7 +12,6 @@
 }
 
 .btn{
-  background-color: #9753B8;
   padding: 0.5rem 1rem;
   color: white;
   font-weight: 500;
@@ -22,7 +21,16 @@
 
 .card{
     border-radius: 1rem;
+    padding: 2rem;
     box-shadow: 0.5rem 0.5rem 0.5rem #00000022;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+.hover:hover{
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
 }
 
 .content{
@@ -31,6 +39,7 @@
 .content h4{
     margin-top: 2rem;
     margin-bottom: 2rem;
+    font-weight: 700;
 }
 .content h3{
     margin-bottom: 2rem;
@@ -49,7 +58,8 @@
     padding: 2rem;
     position: relative;
     margin: 3rem auto;
-    max-width: 67.75rem;
+    max-width: 58.6rem;
+
 }
 .greenBox img{
     width: 6.5rem;
@@ -57,6 +67,14 @@
     position: absolute;
     left: -1.5rem;
     top: -1.5rem;
+}
+.greenBox h3{
+    font-weight: 500;
+    font-size: 2rem;
+}
+.greenBox p{
+    color: #9753B8;
+    font-style: oblique;
 }
 .content ol div, .content ul div{
     display: flex;
@@ -70,6 +88,22 @@
     display: flex;
     gap: 1rem;
 }
+.content ul{
+    list-style: disc;
+}
+.content dt{
+    color: #9753B8;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.content .joyTips ul{
+    list-style: none;
+}
+.content .joyTips ul li{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
 
 .content ol li, .content ul li{
     padding-left: 1rem;
@@ -103,6 +137,9 @@
 }
 .mirror{
     width:60%;
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
 }
 .tips img{
     margin: 0 auto;
@@ -113,7 +150,6 @@
 }
 .tips{
     font-weight:600;
-    border-bottom: 2px solid #9747FF;
     padding-bottom: 5rem;
     justify-content: center;
 }
@@ -124,8 +160,7 @@
     display: flex;
     list-style-type: disc;
     padding-left: 3rem;
-    row-gap: 1rem;
-    column-gap: 2rem;
+
 }
 .content .bulletList em{
     font-weight: 600;
@@ -184,6 +219,21 @@
 .content .angerTips .normalList{
     padding-left: 0;
 }
+.content .listFear{
+    padding-left: 2rem;
+}
+.content .bigNumbersList li>div>span{
+    font-size: 24px;
+    color: #9753B8;
+}
+.content .bigNumbersList li >div{
+    gap: 0;
+}
+.content .bigNumbersList li > span{
+    font-size: 60px;
+    position: relative;
+    top: 1rem;
+}
 
 @media (min-width:640px) {
     .content .selfConfidence{
@@ -193,6 +243,9 @@
     
     .mirror{
         width:40%;
+    }
+    .greenBox{
+        padding: 2rem  8rem;
     }
 }
 
@@ -204,10 +257,17 @@
         flex-wrap: nowrap;
         gap: 4rem;
     }
+
     .greenBox img{
         width: max-content;
         left: -3rem;
         top: -3rem;
+    }
+    .content .listFear{
+        flex-direction: column;
+    }
+    .greenBox h3{
+        font-size: 3rem;
     }
     .shelby{
         font-size: 100px;
@@ -227,12 +287,27 @@
     .tips li{
         max-width: max-content;
     }
-    .content .bigNumbersList span{
-        font-size: 80px;
+    .content .bigNumbersList li > span{
+        font-size: 100px;
+        top: 2rem;
+
     }
+
+
+    .content .bigNumbersList li>div>span{
+        color: #9753B8;
+        font-size: 30px;
+    }
+
     .content .angerTips img{
         max-width: none;
         margin-bottom: 2rem;
+    }
+    .content .bulletList{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1rem;
+        column-gap: 3rem;
     }
     
 }

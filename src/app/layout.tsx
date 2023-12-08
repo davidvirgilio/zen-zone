@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 import './globals.css'
 import './ui/styles/statics.css'
 import { poppins } from './ui/fonts'
-import GoogleAnalytics from '@/components/analytics'
+import ReactGA from "react-ga4"
 
 
 
@@ -18,7 +18,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  
+  ReactGA.initialize('G-HNGR2YN2DN');
 
   return (
     <html lang="en">
@@ -26,10 +26,6 @@ export default function RootLayout({
         <Header />
           {children}
         <Footer />
-        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
-            <GoogleAnalytics ga_id= 
-            {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
-          ) : null}
       </body>
     </html>
   )
